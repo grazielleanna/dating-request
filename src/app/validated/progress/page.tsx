@@ -46,7 +46,7 @@ export default function ProgressPage() {
 
             setTimeout(() => {
 
-                setResult({ loading: false, question: result.question + 1, finished: newIndex === (questionQuantity - 1) });
+                setResult({ loading: false, question: result.question + 1, finished: newIndex === (questionQuantity) });
             }, 8200);
 
         } else {
@@ -60,11 +60,11 @@ export default function ProgressPage() {
             });
 
             setTimeout(() => {
-                setResult(prevState => ({ ...prevState, loading: false, finished: newIndex === (questionQuantity - 1) }));
+                setResult(prevState => ({ ...prevState, loading: false, finished: newIndex === (questionQuantity) }));
             }, 7900);
         }
 
-        if (indexQuestion <= (questionQuantity - 1)) {
+        if (indexQuestion <= (questionQuantity)) {
             setIndexQuestion(indexQuestion + 1);
         } else {
             setResult(prevState => ({ ...prevState, finished: true }));

@@ -2,13 +2,12 @@
 
 import Image from 'next/image'
 import '../globals.css'
-import { Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Music } from './components/music'
 
-const poppins = Poppins({
-    subsets: ['latin-ext'],
-    weight: '400'
-})
+// const poppins = Inter({
+//     subsets: ['latin-ext']
+// })
 
 
 export default function RootLayout({
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={poppins.className}>
+            <body>
                 <main className="flex min-h-screen flex-col items-center justify-between p-8 lg:p-24 bg-blue">
                     <Music />
                     <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
