@@ -42,7 +42,7 @@ export function PhotoMoment({ index, showMoments, closeMoments }: PhotoMomentPro
                 src={`/images/photo${index}.jpeg`}
                 width="500"
                 height="500"
-                className="mx-auto mt-3"
+                className="mx-auto mt-3 photo-moment"
             />
         </motion.div>
     )
