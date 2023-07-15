@@ -10,10 +10,6 @@ const poppins = Poppins({
     weight: '400'
 })
 
-export const metadata = {
-    title: 'Dating Request',
-    description: 'Site para pedido de namoro',
-}
 
 export default function RootLayout({
     children,
