@@ -24,9 +24,15 @@ body .container {
   }
 }
 
-body .photo-moment{
-  height: 330px;
+body .photo-moment {
+  height: 450px;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
+}
+
+@media (max-width:760px) {
+  body .photo-moment {
+    height: 350px;
+  }
 }
